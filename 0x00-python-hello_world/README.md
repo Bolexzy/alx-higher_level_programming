@@ -11,8 +11,9 @@ Project done during Full Stack Software Engineering studies at Alx Africa. It ai
 - Tested on Ubuntu 20.04 LTS
 
 ## Files
---- | ---
+
 Filename | Description
+--- | ---
 `0-run` | Shell script that runs a Python script, where its name is stored in an environment variable
 `1-run_inline` | Shell script that runs a Python script, where Python code is saved in an environment variable
 `2-print.py` | Python script that prints a message
