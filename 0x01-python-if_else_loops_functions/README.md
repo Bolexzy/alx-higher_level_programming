@@ -1,6 +1,6 @@
 # Python-hello_world
 
-Project done during Full Stack Software Engineering studies at Alx Africa. It aims to learn about variables, basics commands (print) and handling strings with Python.
+Project done during Full Stack Software Engineering studies at Alx Africa. It aims to learn about if/else statements, loops, range and functions in **Python**.
 
 ## Technologies
 
@@ -14,17 +14,21 @@ Project done during Full Stack Software Engineering studies at Alx Africa. It ai
 
 Filename | Description
 --- | ---
-`0-run` | Shell script that runs a Python script, where its name is stored in an environment variable
-`1-run_inline` | Shell script that runs a Python script, where Python code is saved in an environment variable
-`2-print.py` | Python script that prints a message
-`3-print_number.py` | Prints a message with print function, using format
-`4-print_float.py` | Prints a float with print function, using format and precission
-`5-print_string.py` | Prints 3 times a string using print function with format
-`6-concat.py` | Concatenates strings and prints the result
-`7-edges.py` | Prints some letters of a string
-`8-concat_edges.py` | Prints some parts of a string
-`9-easter_egg.py` | Prints "The Zen of Python"
-`10-check_cycle.c` | C program that finds a loop in a linked list
-`100-write.py` | Python script that prints a message with `write` sys
-`101-compile` | Shell script that compiles a Python file
-`102-magic_calculation.py` | Python function that does exactly the same as a given disassembler
+`0-positive_or_negative.py` | Prints if a number is positive, zero or negative
+`1-last_digit.py` | Prints the last digit of a random number
+`2-print_alphabet.py` | Prints the ASCII alphabet in lowercase
+`3-print_alphabt.py` | Prints the ASCII alphabet in lowercase, except `q` and `e`
+`4-print_hexa.py` | Prints all numbers from `0` to `98` in decimal and hexadecimal
+`5-print_comb2.py` | Prints numbers from 0 to 99, separated by `,`
+`6-print_comb3.py` | Prints all possible combinations of two digits, separated by `,`
+`7-islower.py` | Checks for lowercase character
+`8-uppercase.py` | Prints a string in uppercase
+`9-print_last_digit.py` | Prints the last digit of a passed number
+`10-add.py` | Adds two integers and returns the result
+`11-pow.py` | Computes `a` to the power of `b` and return the value
+`12-fizzbuzz.py` | Prints FizzBuzz pattern
+`13-insert_number.c` | Inserts a node in a linked list according to a given index
+`100-print_tebahpla.py` | Prints the ASCII aplhabet in reverse, in uppercase and lowercase
+`101-remove_char_at.py` | Creates a copy of the string, removing the character at the position `n`
+`102-magic_calculation.py` | Function that does exactly the same as a given Python bytecode
+
