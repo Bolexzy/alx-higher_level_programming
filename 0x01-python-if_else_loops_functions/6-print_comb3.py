@@ -1,5 +1,5 @@
 #!/usr/bin/python3.8
-for num in range(0, 100):
+for num in range(1, 100):
     if (num / 10) > (num % 10):
         continue
     if num == 89:
