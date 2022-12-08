@@ -14,12 +14,13 @@ def roman_to_int(roman_string):
         'V': 5,
         'I': 1
     }
-    
+
     for i in range(length):
-        if roman_dict.get(roman_string[i]) == None:
+        if roman_dict.get(roman_string[i]) is None:
             return (0)
-        if (i < length - 1 and roman_dict[roman_string[i]] < roman_dict[roman_string[i + 1]]):
-                num -= roman_dict[roman_string[i]]
+        if (i < length - 1 and
+                roman_dict[roman_string[i]] < roman_dict[roman_string[i + 1]]):
+            num -= roman_dict[roman_string[i]]
         else:
             num += roman_dict[roman_string[i]]
 
