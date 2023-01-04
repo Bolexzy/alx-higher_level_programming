@@ -50,12 +50,16 @@ def matrix_mul(m_a, m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
     # create an empty result matrix
-    new_matrix = [[0 for _ in range(len(m_b[0]))] for _ in range(len(m_a))]
+    new_matrix = []
 
     # Multiply the matrices
     for i in range(len(m_a)):
+        row = []
         for j in range(len(m_b[0])):
+            prod = 0
             for k in range(len(m_b)):
-                new_matrix[i][j] += m_a[i][k] * m_b[k][j]
+                prod += m_a[i][k] * m_b[k][j]
+            row.append(prod)
+        new_matrix.append(row)
 
     return new_matrix
