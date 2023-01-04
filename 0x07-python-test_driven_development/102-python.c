@@ -11,7 +11,7 @@ void print_python_string(PyObject *p)
 	fflush(stdout);
 
 	printf("[.] string object info\n");
-	if (!PyString_CheckExact((PyStringObject *)p))
+	if (strcmp(p->ob_type->tp_name, "str"))
 	{
 		printf("  [ERROR] Invalid String Object\n");
 		return;
