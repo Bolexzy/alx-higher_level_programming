@@ -11,13 +11,13 @@ void print_python_string(PyObject *p)
 	fflush(stdout);
 
 	printf("[.] string object info\n");
-	if (!PyString_CheckExact(p))
+	if (!PyString_CheckExact((PyStringObject *)p))
 	{
 		printf("  [ERROR] Invalid String Object\n");
 		return;
 	}
 
-	length = PyString_Size(p);
+	length = PyUnicode_GET_SIZE(p);
 
 	if (PyUnicode_IS_COMPACT_ASCII(p))
 		printf("  type: compact ascii\n");
