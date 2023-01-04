@@ -6,18 +6,18 @@
  */
 void print_python_string(PyObject *p)
 {
-	long int length;
+	Py_ssize_t length;
 
 	fflush(stdout);
 
 	printf("[.] string object info\n");
-	if (strcmp(p->ob_type->tp_name, "str") != 0)
+	if (!PyString_CheckExact(p))
 	{
 		printf("  [ERROR] Invalid String Object\n");
 		return;
 	}
 
-	length = ((PyASCIIObject *)(p))->length;
+	length = PyString_Size(p);
 
 	if (PyUnicode_IS_COMPACT_ASCII(p))
 		printf("  type: compact ascii\n");
