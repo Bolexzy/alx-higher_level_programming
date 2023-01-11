@@ -46,8 +46,8 @@ A ``TypeError`` will be raised for any more than one instantiation arguments.
     TypeError: list expected at most 1 argument, got 2
 
 
-Usage
-=====
+More Usage
+==========
 
 ``MyList`` is an inherited ``list`` class, and thus features the same methods.
 For instance, elements can be added to a ``MyList`` with the ``append()`` method.
