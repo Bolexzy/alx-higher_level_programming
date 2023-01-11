@@ -7,8 +7,8 @@ class MyInt(int):
 
     def __eq__(self, value):
         """Override == opeartor with != behavior."""
-        return self.real != value
+        return not super().__eq__(value)
 
     def __ne__(self, value):
         """Override != operator with == behavior."""
-        return self.real == value
+        return super().__eq__(value)
