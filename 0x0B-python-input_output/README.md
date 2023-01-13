@@ -1,9 +1,12 @@
 # Input/Output
-Project done during **Full Stack Software Engineering studies** at **Holberton School**. It aims to learn how to open, read, write and append files from a script in **Python**.
+Project done during **Full Stack Software Engineering studies** at **ALX Africa**. It aims to learn how to open, read, write and append files from a script in **Python**.
 
 ## Technologies
-* Python Scripts are written with Python 3.4.3
-* Tested on Ubuntu 14.04 LTS
+- Scripts written in Bash 5.0.17(1)
+- Python Scripts are written with Python 3.8.1
+- C files are compiled using gcc 9.4.01
+- C files are written according to the C90 standard
+- Tested on Ubuntu 20.04 LTS
 
 ## Files
 
