@@ -84,5 +84,5 @@ class Base:
             with open(filename, "r") as json_file:
                 list_dict = Base.from_json_string(json_file.read())
                 return [cls.create(**d) for d in list_dict]
-        except IOError:
+        except FileNotFoundError:
             return []
