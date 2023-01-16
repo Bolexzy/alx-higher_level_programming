@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Defines a base class model."""
 import json
+import csv
 
 
 class Base:
@@ -84,5 +85,46 @@ class Base:
             with open(filename, "r") as json_file:
                 list_dict = Base.from_json_string(json_file.read())
                 return [cls.create(**d) for d in list_dict]
+        except FileNotFoundError:
+            return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Writes the CSV serialization of list_objs to a file.
+        Args:
+            list_objs (list): A list of inherited Base instances.
+        """
+        filename = cls.__name__ + ".csv"
+        with open(filename, "w", newline='') as csv_file:
+            if list_objs is None:
+                csv_file.write("[]")
+            else:
+                if cls.__name__ == "Rectangle":
+                    fieldnames = ["id", "width", "height", "x", "y"]
+                else:
+                    fieldnames = ["id", "size", "x", "y"]
+                writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+                writer.writerows([obj.to_dictionary() for obj in list_objs])
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Return a list of instances instantiated frfom a CSV file.
+         Reads from `<cls.__name__>.csv`.
+
+        Returns:
+            If the file does not exist - an empty list.
+            Otherwise - a list of instantiated classes.
+        """
+        filename = cls.__name__ + ".csv"
+        try:
+            with open(filename, "r") as csv_file:
+                if cls.__name__ == "Rectangle":
+                    fieldnames = ["id", "width", "height", "x", "y"]
+                else:
+                    fieldnames = ["id", "size", "x", "y"]
+                reader = csv.DictReader(csv_file, fieldnames=fieldnames)
+                list_dicts = [dict([k, int(v)] for k, v in d.items())
+                              for d in reader]
+                return [cls.create(**d) for d in list_dicts]
         except FileNotFoundError:
             return []
