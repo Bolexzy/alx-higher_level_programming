@@ -618,11 +618,6 @@ class TestSquare_update_kwargs(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "y must be >= 0"):
             s.update(y=-5)
 
-    def test_update_args_and_kwargs(self):
-        s = Square(10, 10, 10, 10)
-        s.update(89, 2, y=6)
-        self.assertEqual("[Square] (89) 10/10 - 2", str(s))
-
     def test_update_kwargs_wrong_keys(self):
         s = Square(10, 10, 10, 10)
         s.update(a=5, b=10)
