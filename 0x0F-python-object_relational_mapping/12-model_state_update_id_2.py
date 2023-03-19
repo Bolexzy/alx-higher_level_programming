@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" Lists the State object with the name passed as argument
-from the database hbtn_0e_6_usa.
+"""Changes the name of a State object from the database hbtn_0e_6_usa
 """
 from sys import argv
 from model_state import Base, State
