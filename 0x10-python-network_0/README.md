@@ -8,7 +8,7 @@ Project done during **Full Stack Software Engineering studies** at **Alx Africa*
 
 ## Files
 
-All `.txt` files store the answers to the questions asked by Alx project(`0x09. Python - Everything is object`).
+All `.txt` files store the answers to the questions asked by Alx project (`Python - Network #0`).
 
 | Filename | Description |
 | -------- | ----------- |
