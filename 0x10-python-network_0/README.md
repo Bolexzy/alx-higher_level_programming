@@ -6,6 +6,10 @@ Project done during **Full Stack Software Engineering studies** at **Alx Africa*
 - Scripts written in Bash 5.0.17(1)
 - Tested on Ubuntu 20.04 LTS
 
+## Files
+
+All `.txt` files store the answers to the questions asked by Alx project(`0x09. Python - Everything is object`).
+
 | Filename | Description |
 | -------- | ----------- |
 `0-body_size.sh` |  Bash script that sends a `GET` request to a given URL and displays the size of the response body in bytes.
